@@ -8,6 +8,8 @@ if (!isset($_SESSION['loggedin'])) {
     exit;
 }
 
+$username = $_SESSION['username'];
+
 echo "<!DOCTYPE html>
 <html lang='en'>
 <head>
@@ -17,7 +19,7 @@ echo "<!DOCTYPE html>
 </head>
 <body>
     <div class='index-container'>
-        <h2>Welcome to the index page!</h2>
+        <h2>Welcome to the index page, $username!</h2>
         <form action='logout.php' method='post'>
             <input type='submit' name='logout' value='Logout' class='btn btn-primary'>
         </form>
