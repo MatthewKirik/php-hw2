@@ -1,7 +1,7 @@
 <?php
 
 require "db_lib.php";
-require "msg_lib.php"
+require "msg_lib.php";
 
 session_start(['cookie_httponly' => true, 'cookie_secure' => true]);
 
@@ -21,9 +21,9 @@ if (isset($_POST['register'])) {
         $query = "INSERT INTO users (username, password_hash)
             VALUES('$username', '$password_hash')";
         mysqli_query($conn, $query);
-        // display_success('Registered successfully!');
+        display_success('Registration successful');
     } else {
-        showError('Username already used by someone else.');
+        display_error('The user with such username already exists');
     }
 
     db_conn_close($conn);

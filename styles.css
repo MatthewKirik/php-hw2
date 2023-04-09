@@ -51,7 +51,26 @@ body {
 
 /* Create a btn-primary class to style primary buttons */
 .btn-primary {
-  background-color: #4CAF50;
+  color: black;
+  font-weight: bold;
+}
+
+/* Create a msg-error class to style error messages */
+.msg-error {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: crimson;
   color: white;
   font-weight: bold;
+  padding: 20px;
+}
+
+/* Create a msg-success class to style success messages */
+.msg-success {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
 }

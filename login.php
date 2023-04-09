@@ -23,11 +23,11 @@ if (isset($_POST['login'])) {
     // check if the password matches the hash saved in the database
     if (password_verify($password, $password_hash)) {
         $_SESSION['loggedin'] = true;
+        $_SESSION['username'] = $username;
         header('Location: index.php');
         exit;
-        // Success('Logged in successfully!');
     } else {
-        // Error('Invalid username or password.');
+        display_error('Invalid username or password');
     }
 
     db_conn_close($conn);
