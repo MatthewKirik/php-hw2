@@ -19,6 +19,7 @@ if (isset($_POST['login'])) {
     $pass_query = "SELECT password_hash FROM users WHERE username='$username'";
     $pass_query_result = mysqli_query($conn, $pass_query);
     $password_hash = mysqli_fetch_column($pass_query_result);
+    db_conn_close($conn);
 
     // check if the password matches the hash saved in the database
     if (password_verify($password, $password_hash)) {
@@ -29,8 +30,6 @@ if (isset($_POST['login'])) {
     } else {
         display_error('Invalid username or password');
     }
-
-    db_conn_close($conn);
 }
 
 ?>
