@@ -1,6 +1,7 @@
 <?php
 
 function db_conn_open() {
+    // reading environment variables to connect to database
     $hostname = getenv('HW2_MYSQL_HOSTNAME');
     $username = getenv('HW2_MYSQL_USERNAME');
     $password = getenv('HW2_MYSQL_PASSWORD');
