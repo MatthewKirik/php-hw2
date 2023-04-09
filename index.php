@@ -4,17 +4,14 @@ session_start();
 
 // Check if the user is logged in
 if (isset($_SESSION['loggedin'])) {
-    // If the user is logged in, show the index page
     echo "<!DOCTYPE html>
     <html>
     <head>
         <title>Index</title>
-        <!-- Include the styles.css file to style the page -->
         <link rel='stylesheet' href='styles.css'>
     </head>
     <body>
         <div class='container'>
-            <!-- Display a greeting message -->
             <h2>Welcome to the index page!</h2>
         </div>
     </body>
