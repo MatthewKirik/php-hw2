@@ -10,7 +10,7 @@ if (!isset($_SESSION['loggedin'])) {
 
 $username = $_SESSION['username'];
 
-echo "<!DOCTYPE html>
+"<!DOCTYPE html>
 <html lang='en'>
 <head>
     <meta charset='utf-8'>
