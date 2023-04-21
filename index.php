@@ -9,6 +9,7 @@ if (!isset($_SESSION['loggedin'])) {
 }
 
 $username = $_SESSION['username'];
+session_commit();
 
 "<!DOCTYPE html>
 <html lang='en'>

@@ -15,6 +15,7 @@ if (isset($_POST['register'])) {
     $user_exists_query = "SELECT * FROM users WHERE username='$username' LIMIT 1";
     $result = mysqli_query($conn, $user_exists_query);
     $user = mysqli_fetch_assoc($result);
+    session_commit();
 
     if (!$user) {
         $password_hash = password_hash($password, PASSWORD_DEFAULT);

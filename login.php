@@ -25,6 +25,7 @@ if (isset($_POST['login'])) {
     if (password_verify($password, $password_hash)) {
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $username;
+        session_commit();
         header('Location: index.php');
         exit;
     } else {
