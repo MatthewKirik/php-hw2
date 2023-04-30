@@ -1,0 +1,76 @@
+/* Set the font for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Create a container class to center and constrain the content */
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Create a container class to center and constrain the content */
+.index-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Create a form-group class to style form groups */
+.form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Style the labels within form groups */
+.form-group label {
+  display: block;
+}
+
+/* Style the text and password inputs within form groups */
+.form-group input[type='text'],
+.form-group input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Create a btn class to style buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Create a btn-primary class to style primary buttons */
+.btn-primary {
+  color: black;
+  font-weight: bold;
+}
+
+/* Create a msg-error class to style error messages */
+.msg-error {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+}
+
+/* Create a msg-success class to style success messages */
+.msg-success {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+}
